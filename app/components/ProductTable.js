@@ -11,23 +11,23 @@ const products = [
 ];
 
 const ProductTable = ({ filter }) => {
-    const rows = [];
+  const rows = [];
 
-    products.forEach((p) => {
-        const nameLC = p.name.toLowerCase();
-        const filterLC = filter.toLowerCase();
+  products.forEach((p) => {
+    const nameLC = p.name.toLowerCase();
+    const filterLC = filter.toLowerCase();
 
-        if (nameLC.indexOf(filterLC) !== -1) {
-            rows.push(
+    if (nameLC.indexOf(filterLC) !== -1) {
+      rows.push(
               <ProductRow key={p.name} data={p} />
             );
-        }
-    });
-    return <div> {rows} </div>;
+    }
+  });
+  return <div> {rows} </div>;
 };
 
 ProductTable.propTypes = {
-    filter: PropTypes.string
+  filter: PropTypes.string
 };
 
 export default ProductTable;

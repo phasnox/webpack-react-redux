@@ -6,7 +6,7 @@ const ProductRow = ({ data }) =>
     </div>;
 
 ProductRow.propTypes = {
-    data: PropTypes.object
+  data: PropTypes.object
 };
 
 export default ProductRow;
