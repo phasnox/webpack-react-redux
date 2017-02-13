@@ -11,7 +11,7 @@ const products = [
 ];
 
 const ProductTable = ({ filter }) => {
-    let rows = [];
+    const rows = [];
 
     products.forEach((p) => {
         const nameLC = p.name.toLowerCase();
@@ -19,11 +19,10 @@ const ProductTable = ({ filter }) => {
 
         if (nameLC.indexOf(filterLC) !== -1) {
             rows.push(
-                <ProductRow key={p.name} data={p} />
+              <ProductRow key={p.name} data={p} />
             );
         }
     });
-
     return <div> {rows} </div>;
 };
 
