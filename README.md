@@ -5,6 +5,7 @@ A boilerplate for playing around with react, redux and react-router with the hel
 
 Contains: 
 
+* Docker config
 * a working example of a filterable table which you can play around with (look below).
 * ES6 - 7 Support with Babel
 * Redux dev tools to help you keep track of the app's state
@@ -21,6 +22,14 @@ Contains:
 
 
 ## Run the app
+
+0. ```docker-compose build```
+0. ```docker-compose run --rm app setup```
+0. ```docker-compose up```
+**NOTE:** Consider changing the service name in `docker-compose.yml` to other
+thing than `app`
+
+## Alternatively if you already have node installed
 
 0. ```npm install```
 0. ```npm start```

@@ -3,11 +3,12 @@
 var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var appConfig = require('./appConfig');
 
 module.exports = {
   devtool: 'eval-source-map',
   entry: [
-    'webpack-dev-server/client?http://localhost:3000',
+    `webpack-dev-server/client?http://${appConfig.HOST}:${appConfig.PORT}`,
     'webpack/hot/only-dev-server',
     'react-hot-loader/patch',
     path.join(__dirname, 'app/index.js')
