@@ -18,13 +18,13 @@ render(
 );
 
 if (module.hot) {
-    module.hot.accept('./containers/Root', () => {
-        const NewRoot = require('./containers/Root').default;
-        render(
+  module.hot.accept('./containers/Root', () => {
+    const NewRoot = require('./containers/Root').default;
+    render(
             <AppContainer>
                 <NewRoot store={store} history={history} />
             </AppContainer>,
             document.getElementById('root')
         );
-    });
+  });
 }
