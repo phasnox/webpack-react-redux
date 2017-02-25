@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const About = () =>
   <div>
@@ -10,7 +10,7 @@ const About = () =>
       allowTransparency="true"
       scrolling="0" />
   </div>
-  </div>;
+  </div>
 
 
-export default About;
+export default About
