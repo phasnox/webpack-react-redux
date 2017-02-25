@@ -3,6 +3,22 @@
 # webpack-react-redux
 A boilerplate for playing around with react, redux and react-router with the help of webpack.
 
+## About this fork
+
+This project is a fork from jpsierens boilerplate [here](https://github.com/jpsierens/webpack-react-redux), but it adds the following:
+
+0. **Dockerfile and docker-compose.yml.** To get the docker container up and
+  running: `docker-compose up`, you can access the server on
+  http://localhost:8077/. 
+0. **Nginx config.** The app runs behind an nginx server so it can be paired up
+  with any API application you have. Just edit and/or replace 
+  the `location /api` in `conf/app_nginx.conf`.
+0. **Fontawesome**. Also added an `<Icon />` component for ease of use(see the
+  example)
+0. **Initial loading screen.** Adds a pure css animated loading screen.
+0. **Production conf.** Production ready configuration files for nginx and
+   docker
+
 Contains: 
 
 * Docker config
@@ -65,3 +81,14 @@ I went ahead and wrote a detailed series of posts on this project for you. I hop
 
 ## Why doesn't it have async?
 To keep it unopinionated. You choose what async library you want. If you want to check out a full example with async in it, check this simple [todo-app](https://github.com/jpsierens/todo-app) that uses redux-sagas.
+
+## NOTE: Font-awesome License as of v4.7.0
+- The Font Awesome font is licensed under the SIL OFL 1.1:
+  - http://scripts.sil.org/OFL
+- Font Awesome CSS, LESS, and Sass files are licensed under the MIT License:
+  - https://opensource.org/licenses/mit-license.html
+- The Font Awesome documentation is licensed under the CC BY 3.0 License:
+  - http://creativecommons.org/licenses/by/3.0/
+- Attribution is no longer required as of Font Awesome 3.0, but much appreciated:
+  - `Font Awesome by Dave Gandy - http://fontawesome.io`
+- Full details: http://fontawesome.io/license/

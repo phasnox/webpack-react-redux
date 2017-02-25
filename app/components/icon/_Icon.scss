@@ -1,0 +1,11 @@
+@import '~styles/vendor/font-awesome/font-awesome';
+
+.default {
+  button:first-child {
+    margin-right: 1rem;
+  }
+
+  button:last-child {
+    margin-left: 1rem;
+  }
+}

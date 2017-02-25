@@ -14,7 +14,16 @@ module.exports = {
       // Allows `import example from 'components/example';`
       'components': path.join(__dirname, 'app/components'),
       'routes': path.join(__dirname, 'app/routes'),
-      'store': path.join(__dirname, 'app/store')
+      'store': path.join(__dirname, 'app/store'),
+
+      // Allows sass importing: `@import '~styles/mixins/example';`
+      'styles': path.join(__dirname, 'app/assets/styles'),
+
+      // Allows importing images: `import logo from 'images/logo.png';`
+      'images': path.join(__dirname, 'app/assets/images'),
+
+      // Allows referencing of fonts in css `src: url('fonts/comic-sans.woff');`
+      'fonts': path.join(__dirname, 'app/assets/fonts')
     }
   },
 
