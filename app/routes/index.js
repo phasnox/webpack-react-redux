@@ -8,5 +8,6 @@ export default (
 	<Route path="/" component={Shell}>
 		<IndexRoute component={FilterableTable} />
 		<Route path="/about" component={About} />
+		<Route path="/test_dist" component={FilterableTable} />
 	</Route>
 )
