@@ -4,7 +4,7 @@ const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const commonConfig = require('./webpack.common.config')
-const appConfig = require('./appConfig')
+const appConfig = require('./conf/appConfig')
 
 const devConfig = Object.assign(commonConfig, {
 

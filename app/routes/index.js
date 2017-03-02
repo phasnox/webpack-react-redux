@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, IndexRoute } from 'react-router'
-import Shell from './shell/Shell'
+import Shell from './shell'
 import FilterableTable from './filterable-table'
 import About from './about'
 
